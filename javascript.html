@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My first Javascript</title>
+	<style type="text/css">
+		#innoo,#innoo2,#innoo3,#innoo4,#innoo5
+		{
+			color:blue;
+		}
+	</style>>
+</head>
+<body>
+   <h1 id="innoo">Display date by clicking below button</h1>
+   <button onclick='document.getElementById("innoo").innerHTML=Date()'>Click Me!</button>
+   <h1 id="innoo2">Display date by clicking below button</h1>
+   <button onclick='document.getElementById("innoo2").innerHTML=new Date().getMonth()'>Click Me!</button>
+  <h1 id="innoo3">Display date by clicking below button</h1>
+   <button onclick='document.getElementById("innoo3").innerHTML=new Date().getDate()'>Click Me!</button>
+   <h1 id="innoo4">Display Hours by clicking below button</h1>
+   <button onclick='document.getElementById("innoo4").innerHTML=new Date().getHours()'>Click Me!</button>
+   <h1 id="innoo5">Display Minutes by clicking below button</h1>
+   <button onclick='document.getElementById("innoo5").innerHTML=new Date().getMinutes()'>Click Me!</button>
+</body>
+</html>

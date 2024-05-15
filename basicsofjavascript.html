@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Output Statements</title>
+</head>
+<body>
+    <h1 id="innoo"></h1>
+    <h1 id="innoo1"></h1>
+    <h1 id="innoo2"></h1>
+    <h1 id="innoo3"></h1>
+    <h1 id="innoo4"></h1>
+    <script type="text/javascript">
+       var a=100;
+       document.getElementById('innoo').innerHTML=a;
+       
+       var num=10;
+       document.getElementById('innoo1').innerHTML=num;
+       var bool=true;
+       document.getElementById('innoo2').innerHTML=bool;
+       var arr=[1,2,3,4,5];
+       document.getElementById('innoo3').innerHTML=arr;
+
+       var age=8;
+       if(age>=18)
+       {
+       	console.log("Eligible to vote")
+       }else{
+       	console.log("Not eligible to vote")
+       }
+       document.getElementById('innoo4').innerHTML=age;
+      
+
+       document.write("<b> for loop:</b><br>");
+       for (let i=0;i<5;i++)
+       {
+      document.write(i+"<br>");
+       }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Change text</title>
+	<style type="text/css">
+		button{
+			color: darkblue;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+    <h1 id="innoo">Change text</h1>
+    <img src="nick.webp" width="50%" id="image"><br><br>
+    <button onclick="document.getElementById('innoo').innerHTML='Innoovatum search Engine'">Click me!</button>
+    <button onclick="document.getElementById('innoo').style.color='blue'">Make me Blue</button>
+    <button onclick="document.getElementById('innoo').style.color='green'">Make me green</button>
+    <button onclick="document.getElementById('innoo').style.fontSize='100px'">Make me Larger</button>
+    <button onclick="document.getElementById('innoo').style.fontSize='10px'">Make me Smaller</button>
+    <button onclick="document.getElementById('innoo').style.display='none'">Make me Hidden</button>
+    <button onclick="document.getElementById('innoo').style.display='block'">Make me Display</button>
+    <br><br>
+    <button onclick="document.getElementById('image').style.borderRadius='50%'">Make me Round</button>
+    <button onclick="document.getElementById('image').style.borderRadius='10%'">Make me Rounded corner</button>
+    <button onclick="document.getElementById('image').src='horse.jpg'">Display cartoon image</button>
+    <button onclick="document.getElementById('image').src='jerry.webp'">Display cartoon image</button>
+</body>
+</html>

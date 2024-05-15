@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>To-Do-List</title>
+	<style type="text/css">
+		body
+		{
+			font-family: arial sans-serif;
+			background-color: pink;
+		}
+		ul 
+		{
+			list-style-type: none;
+			padding: 0;
+		}
+		li 
+		{
+			margin-bottom: 5px;
+			cursor:pointer;
+		}
+		li.completed 
+		{
+			text-decoration: line-through;
+		}
+		button 
+		{
+			margin-top: 15px;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+
+   <center>
+
+   	<h1>To-Do-List</h1>
+
+   	<input type="text" id="taskInput"><br><br>
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="tasklist"></ul>
+
+   </center>
+
+   <script type="text/javascript">
+   	function addTask()
+    {
+   		var taskInput=document.getElementById('taskInput');
+   		var tasklist=document.getElementById('tasklist');
+        if(taskInput.value.trim() !== "")
+        {
+        	var li=document.createElement('li');
+        	li.textContent=taskInput.value;
+        	li.onclick=function()
+        	{
+        		this.classList.toggle('completed')
+        	};
+        	tasklist.appendChild(li);
+        	taskInput.value="";
+        }
+
+        else
+        {
+        	alert('Please enter a task !');
+        }
+   	}
+   </script>
+
+</body>
+</html>
